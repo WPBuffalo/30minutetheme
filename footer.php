@@ -10,4 +10,4 @@
 wp_footer(); // This command loads additional resources
 ?><!-- All done using php -->
 </body><!-- All done with the body -->
-</html><!-- All done!   -->
+</html><!-- All done! -->
