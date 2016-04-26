@@ -1,7 +1,7 @@
 /*
 Theme name:30 Minute Theme
 */
-
+  
 * {
 	box-sizing: border-box;
 }
@@ -184,21 +184,21 @@ hr {
 #menu-wrapper {
 	background: #B76F1E;
 }
-#menu {
+.nav-container {
 	overflow: hidden;
 	height: 100px;
 }
-#menu ul {
+.nav-container ul {
 	margin: 0;
 	padding: 0px 0px 0px 0px;
 	list-style: none;
 	line-height: normal;
 	text-align: center;
 }
-#menu li {
+.nav-container li {
 	display: inline-block;
 }
-#menu a {
+.nav-container a {
 	display: block;
 	letter-spacing: 1px;
 	padding: 0px 40px;
@@ -210,10 +210,10 @@ hr {
 	border: none;
 	color: #FFF;
 }
-#menu a:hover, #menu .current_page_item a {
+.nav-container a:hover, .nav-container .current_page_item a {
 	text-decoration: none;
 }
-#menu .current_page_item a {
+.nav-container .current_page_item a {
 	background: #C38136;
 }
 
