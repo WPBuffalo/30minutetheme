@@ -1,62 +1,399 @@
 /*
 Theme name:30 Minute Theme
 */
+
 * {
-  margin: 0;
-  padding: 0;
-  box-model: border-box; }
-
+	box-sizing: border-box;
+}
+html, body {
+	height: 100%;
+}
 body {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  min-height: 100vh;
-  height: 100vh;
-  /* ie doesn't like min-height here, which is too bad because it makes more sense. */
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  font-family: sans-serif; }
+	margin: 0px;
+	padding: 0px;
+	background: #B76F1E;
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	color: #363636;
+}
+h1, h2, h3 {
+	margin: 0;
+	padding: 0;
+}
+p, ol, ul {
+	margin-top: 0px;
+}
+p {
+	line-height: 190%;
+}
 
-header, footer {
-  text-align: center;
-  background: #aaa; }
+strong {}
+a {
+	color: #171717;
+}
+a:hover {
+	text-decoration: none;
+}
+a img {
+	border: none;
+}
+	.image {
+		display: inline-block;
+	}
+		.image img {
+			display: block;
+			width: 100%;
+		}
+	.image-full {
+		display: block;
+		width: 100%;
+		margin: 0 0 2em 0;
+	}
+	.image-left {
+		float: left;
+		margin: 0 2em 2em 0;
+	}
+	.image-centered {
+		display: block;
+		margin: 0 0 2em 0;
+	}
+		.image-centered img	{
+			margin: 0 auto;
+			width: auto;
+		}
 
-#pagecontent {
-  padding: 1em;
-  -webkit-flex: 1;
-      -ms-flex: 1;
-          flex: 1; }
+hr {
+	display: none;
+}
 
-nav ul {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
-  list-style-type: none; }
-  nav ul a {
-    text-decoration: none; }
 
-nav, h1, h2, p {
-  margin: 0.3em 0; }
+/*********************************************************************************/
+/* List Styles                                                                   */
+/*********************************************************************************/
 
-#sidebar li {
-  list-style-type: none; }
+	ul.style1	{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	ul.style1 li {
+		border-top: solid 1px #E5E5E5;
+		padding: 0.80em 0;
+	}
+	ul.style1 li:first-child {
+		border-top: 0;
+		padding-top: 0;
+	}
+	ul.style2 {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	ul.style2 li {
+		border-top: solid 1px #E5E5E5;
+		padding: 0.80em 0;
+	}
+	ul.style2 li:first-child {
+		border-top: 0;
+		padding-top: 0;
+	}
 
-@media screen and (min-width: 800px) {
-  #main, #sidebar {
-    float: left; }
-  #main {
-    width: 72%;
-    margin-right: 1em; }
-  .home #main {
-    width: 100%;
-    margin:0;
-  }
-  #sidebar {
-    margin-left: 1em;
-    width: 22%; } }
 
-/*# sourceMappingURL=style.css.map */
+/*********************************************************************************/
+/* Heading Titles                                                                */
+/*********************************************************************************/
+.page-title, .widget-title  {
+	font-weight: 400;
+	font-size: 2em;
+	color: #CC7310;
+	margin-bottom: 1em;
+	text-transform: uppercase;
+}
+.widget-title {
+	font-size: 1.75em;
+}
+
+/** WRAPPER */
+#wrapper {}
+.footer-wrapper {
+	background: #0F0F0F;
+}
+.container {
+	width: 100%;
+	margin: 0px auto;
+}
+.clearfix {
+	clear: both;
+}
+
+/*********************************************************************************/
+/* Wrappers                                                                      */
+/*********************************************************************************/
+#header-wrapper {
+	overflow: hidden;
+	background-size: 100%;
+	padding: 1em 0em 0em 0em;
+	background: #333333;
+}
+
+/*********************************************************************************/
+/* Header                                                                        */
+/*********************************************************************************/
+#header {
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+}
+
+/*********************************************************************************/
+/* Logo                                                                          */
+/*********************************************************************************/
+#logo {
+	width: 500px;
+	margin: 0 auto;
+	padding: 2em 0em;
+	text-transform: uppercase;
+}
+#logo h1 {
+	letter-spacing: 0.10em;
+	font-size: 3em;
+}
+#logo p {
+	letter-spacing: 0.10em;
+	color: #FFF;
+}
+#logo a {
+	text-decoration: none;
+	color: #FFF;
+}
+
+/*********************************************************************************/
+/* Banner                                                                        */
+/*********************************************************************************/
+
+#banner {
+	overflow: hidden;
+	height: 500px;
+	background: url(images/brewery.jpg) no-repeat center;
+	background-size: cover;
+}
+#banner .image{ }
+
+/** MENU */
+#menu-wrapper {
+	background: #B76F1E;
+}
+#menu {
+	overflow: hidden;
+	height: 100px;
+}
+#menu ul {
+	margin: 0;
+	padding: 0px 0px 0px 0px;
+	list-style: none;
+	line-height: normal;
+	text-align: center;
+}
+#menu li {
+	display: inline-block;
+}
+#menu a {
+	display: block;
+	letter-spacing: 1px;
+	padding: 0px 40px;
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 0.80em;
+	line-height: 100px;
+	border: none;
+	color: #FFF;
+}
+#menu a:hover, #menu .current_page_item a {
+	text-decoration: none;
+}
+#menu .current_page_item a {
+	background: #C38136;
+}
+
+/** PAGE */
+#page {
+	position: relative;
+	overflow: hidden;
+	padding: 6em 3em 5em 3em;
+	background: #ffffff;
+}
+
+/** MAIN WP CONTENT FOR PAGE (EDITOR CONTENT) */
+#content {
+	float: left;
+	width: 65%;
+	padding: 0;
+}
+
+/*********************************************************************************/
+/* Sidebar                                                                       */
+/*********************************************************************************/
+#sidebar {
+	float: right;
+	width: 30%;
+}
+#sidebar .widget-title {
+	font-size: 1.6em;
+}
+#sidebar .box1 {
+	margin-bottom: 3em;
+}
+
+
+/*********************************************************************************/
+/* Copyright                                                                     */
+/*********************************************************************************/
+#copyright {
+	overflow: hidden;
+	padding: 5em 0em;
+	text-align: center;
+}
+#copyright p {
+	letter-spacing: 0.20em;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 0.80em;
+	color: rgba(255,255,255,.5);
+}
+#copyright a {
+	text-decoration: none;
+	color: rgba(255,255,255,.7);
+}
+
+/*********************************************************************************/
+/* Button Style                                                                  */
+/*********************************************************************************/
+.button {
+	display: inline-block;
+	margin-top: 1.5em;
+	padding: 1.50em 3em 1.50em 3em;
+	background: #CC7310;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 0.90em;
+	color: #FFF;
+}
+	.button:before {
+		display: inline-block;
+		width: 40px;
+		height: 40px;
+		line-height: 40px;
+		border-radius: 20px;
+		text-align: center;
+		color: #FFF;
+	}
+
+/*********************************************************************************/
+/* Footer                                                                        */
+/*********************************************************************************/
+.footer-wrapper {
+	overflow: hidden;
+	padding: 5em 3em;
+	background: #1E1B1A;
+}
+.footer {
+	color: #ADADAD;
+}
+.footer h3.widget-title {
+	font-weight: 400;
+	font-size: 1.2em;
+	color: #FFF;
+	border
+}
+.footer .widget-title {
+	border-color: #2D2926 !important;
+}
+.footer .style1 li {
+	border-color: #2D2926 !important;
+}
+.footer .style1 a {
+	font-size:1em;
+	color: #B1B1B1;
+}
+.footer-widget {
+	float: left;
+	width: 30%;
+	margin-right: 5%;
+	padding-right: 30px;
+}
+.footer-widget:last-child {
+	margin-right: 0;
+}
+
+/*********************************************************************************/
+/* WP Basics                                                                     */
+/*********************************************************************************/
+.entry-content img {
+	margin: 0 0 1.5em 0;
+	}
+.alignleft, img.alignleft {
+	margin-right: 1.5em;
+	display: inline;
+	float: left;
+	}
+.alignright, img.alignright {
+	margin-left: 1.5em;
+	display: inline;
+	float: right;
+	}
+.aligncenter, img.aligncenter {
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+	clear: both;
+	}
+.alignnone, img.alignnone {
+	/* not sure about this one */
+	}
+.wp-caption {
+	margin-bottom: 1.5em;
+	text-align: center;
+	padding-top: 5px;
+	}
+.wp-caption img {
+	border: 0 none;
+	padding: 0;
+	margin: 0;
+	}
+.wp-caption p.wp-caption-text {
+	line-height: 1.5;
+	font-size: 10px;
+	margin: 0;
+	}
+.wp-smiley {
+	margin: 0 !important;
+	max-height: 1em;
+	}
+blockquote.left {
+	margin-right: 20px;
+	text-align: right;
+	margin-left: 0;
+	width: 33%;
+	float: left;
+	}
+blockquote.right {
+	margin-left: 20px;
+	text-align: left;
+	margin-right: 0;
+	width: 33%;
+	float: right;
+	}
+.gallery dl {}
+.gallery dt {}
+.gallery dd {}
+.gallery dl a {}
+.gallery dl img {}
+.gallery-caption {}
+
+.size-full {}
+.size-large {}
+.size-medium {}
+.size-thumbnail {}
