@@ -1,7 +1,7 @@
 /*
 Theme name:30 Minute Theme
 */
-  
+
 * {
 	box-sizing: border-box;
 }
@@ -72,29 +72,16 @@ hr {
 /* List Styles                                                                   */
 /*********************************************************************************/
 
-	ul.style1	{
+	ul .widget	{
 		margin: 0;
 		padding: 0;
 		list-style: none;
 	}
-	ul.style1 li {
+	ul .widget li {
 		border-top: solid 1px #E5E5E5;
 		padding: 0.80em 0;
 	}
-	ul.style1 li:first-child {
-		border-top: 0;
-		padding-top: 0;
-	}
-	ul.style2 {
-		margin: 0;
-		padding: 0;
-		list-style: none;
-	}
-	ul.style2 li {
-		border-top: solid 1px #E5E5E5;
-		padding: 0.80em 0;
-	}
-	ul.style2 li:first-child {
+	ul .widget li:first-child {
 		border-top: 0;
 		padding-top: 0;
 	}
@@ -103,7 +90,7 @@ hr {
 /*********************************************************************************/
 /* Heading Titles                                                                */
 /*********************************************************************************/
-.page-title, .widget-title  {
+.entry-title, .widget-title  {
 	font-weight: 400;
 	font-size: 2em;
 	color: #CC7310;
@@ -311,20 +298,20 @@ hr {
 .footer .widget-title {
 	border-color: #2D2926 !important;
 }
-.footer .style1 li {
+.footer .widget li {
 	border-color: #2D2926 !important;
 }
-.footer .style1 a {
+.footer .widget a {
 	font-size:1em;
 	color: #B1B1B1;
 }
-.footer-widget {
+.footer .widget {
 	float: left;
 	width: 30%;
 	margin-right: 5%;
 	padding-right: 30px;
 }
-.footer-widget:last-child {
+.footer .widget:last-child {
 	margin-right: 0;
 }
 
