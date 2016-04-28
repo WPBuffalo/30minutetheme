@@ -1,0 +1,408 @@
+* {
+	box-sizing: border-box;
+}
+html, body {
+	height: 100%;
+}
+body {
+	margin: 0px;
+	padding: 0px;
+	background: #B76F1E;
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	color: #363636;
+}
+h1, h2, h3 {
+	margin: 0;
+	padding: 0;
+}
+p, ol, ul {
+	margin-top: 0px;
+}
+p {
+	line-height: 190%;
+}
+
+strong {}
+a {
+	color: #171717;
+}
+a:hover {
+	text-decoration: none;
+}
+a img {
+	border: none;
+}
+	.image {
+		display: inline-block;
+	}
+		.image img {
+			display: block;
+			width: 100%;
+		}
+	.image-full {
+		display: block;
+		width: 100%;
+		margin: 0 0 2em 0;
+	}
+	.image-left {
+		float: left;
+		margin: 0 2em 2em 0;
+	}
+	.image-centered {
+		display: block;
+		margin: 0 0 2em 0;
+	}
+		.image-centered img	{
+			margin: 0 auto;
+			width: auto;
+		}
+
+
+/*********************************************************************************/
+/* List Styles                                                                   */
+/*********************************************************************************/
+
+	ul.widget	{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	ul.widget li {
+		border-top: solid 1px #E5E5E5;
+		padding: 0.80em 0;
+	}
+	ul.widget li:first-child {
+		border-top: 0;
+		padding-top: 0;
+	}
+	ul.widget a {
+		color: #eeeeee;
+	}
+
+
+/*********************************************************************************/
+/* Heading Titles                                                                */
+/*********************************************************************************/
+.entry-title, .widget-title  {
+	font-weight: 400;
+	font-size: 2em;
+	color: #CC7310;
+	margin-bottom: 1em;
+	text-transform: uppercase;
+}
+.widget-title {
+	font-size: 1.75em;
+}
+
+/** WRAPPER */
+#wrapper {}
+.footer-wrapper {
+	background: #0F0F0F;
+}
+.container {
+	width: 100%;
+	margin: 0px auto;
+}
+.clearfix {
+	clear: both;
+}
+
+/*********************************************************************************/
+/* Wrappers                                                                      */
+/*********************************************************************************/
+#header-wrapper {
+	overflow: hidden;
+	background-size: 100%;
+	padding: 1em 0em 0em 0em;
+	background: #333333;
+}
+
+/*********************************************************************************/
+/* Header                                                                        */
+/*********************************************************************************/
+#header {
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+}
+
+/*********************************************************************************/
+/* Logo                                                                          */
+/*********************************************************************************/
+#logo {
+	width: 500px;
+	margin: 0 auto;
+	padding: 2em 0em;
+	text-transform: uppercase;
+}
+#logo h1 {
+	letter-spacing: 0.10em;
+	font-size: 3em;
+}
+#logo p {
+	letter-spacing: 0.10em;
+	color: #FFF;
+}
+#logo a {
+	text-decoration: none;
+	color: #FFF;
+}
+
+/*********************************************************************************/
+/* Banner                                                                        */
+/*********************************************************************************/
+
+#banner {
+	overflow: hidden;
+	height: 500px;
+	background: url(images/brewery.jpg) no-repeat center;
+	background-size: cover;
+}
+#banner .image{ }
+
+/** MENU */
+#menu-wrapper {
+	background: #B76F1E;
+}
+.nav-container {
+	overflow: hidden;
+	height: 100px;
+}
+.nav-container ul {
+	margin: 0;
+	padding: 0px 0px 0px 0px;
+	list-style: none;
+	line-height: normal;
+	text-align: center;
+}
+.nav-container li {
+	display: inline-block;
+}
+.nav-container a {
+	display: block;
+	letter-spacing: 1px;
+	padding: 0px 40px;
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 0.80em;
+	line-height: 100px;
+	border: none;
+	color: #FFF;
+}
+.nav-container a:hover, .nav-container .current_page_item a {
+	text-decoration: none;
+}
+.nav-container .current_page_item a {
+	background: #C38136;
+}
+
+/** PAGE */
+#page {
+	position: relative;
+	overflow: hidden;
+	padding: 6em 3em 5em 3em;
+	background: #ffffff;
+}
+
+/** MAIN WP CONTENT FOR PAGE (EDITOR CONTENT) */
+#content {
+	float: left;
+	width: 65%;
+	padding: 0;
+}
+
+/*********************************************************************************/
+/* Sidebar                                                                       */
+/*********************************************************************************/
+#sidebar {
+	float: right;
+	width: 30%;
+}
+#sidebar ul, #sidebar li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#sidebar .widget li {
+  padding: 0.5em 0;
+  border-top: 1px solid #dddddd;
+}
+#sidebar li:first-child {
+  border-top: none;
+}
+#sidebar .widgettitle {
+	font-size: 1.6em;
+  color: #CC7310;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top: 1.5em;
+  margin-bottom: .75em;
+}
+#sidebar .widgettitle:first-child {
+  margin-top: 0;
+}
+#sidebar .widget {
+	margin-bottom: 3em;
+}
+
+
+/*********************************************************************************/
+/* Copyright                                                                     */
+/*********************************************************************************/
+#copyright {
+	overflow: hidden;
+	padding: 5em 0em;
+	text-align: center;
+}
+#copyright p {
+	letter-spacing: 0.20em;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 0.80em;
+	color: rgba(255,255,255,.5);
+}
+#copyright a {
+	text-decoration: none;
+	color: rgba(255,255,255,.7);
+}
+
+/*********************************************************************************/
+/* Button Style                                                                  */
+/*********************************************************************************/
+.button {
+	display: inline-block;
+	margin-top: 1.5em;
+	padding: 1.50em 3em 1.50em 3em;
+	background: #CC7310;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 0.90em;
+	color: #FFF;
+}
+	.button:before {
+		display: inline-block;
+		width: 40px;
+		height: 40px;
+		line-height: 40px;
+		border-radius: 20px;
+		text-align: center;
+		color: #FFF;
+	}
+
+/*********************************************************************************/
+/* Footer                                                                        */
+/*********************************************************************************/
+.footer-wrapper {
+	overflow: hidden;
+	padding: 5em 3em;
+	background: #1E1B1A;
+}
+.footer {
+	color: #ADADAD;
+}
+.footer ul, .footer li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.footer h2.widgettitle {
+	font-weight: 400;
+	font-size: 1.2em;
+  border-color: #2D2926;
+  margin-bottom: 2em;
+}
+.footer .widget li {
+  border-top: solid 1px #555555;
+  padding: 0.80em 0;
+}
+.footer .widget li:first-child {
+  border-top: none;
+}
+.footer .widget a {
+	font-size:1em;
+	color: #B1B1B1;
+}
+.footer .widget {
+	float: left;
+	width: 30%;
+	margin-right: 5%;
+	padding-right: 30px;
+}
+.footer .widget:last-child {
+	margin-right: 0;
+}
+
+
+/*********************************************************************************/
+/* WP Basics                                                                     */
+/*********************************************************************************/
+.entry-content img {
+	margin: 0 0 1.5em 0;
+	}
+.alignleft, img.alignleft {
+	margin-right: 1.5em;
+	display: inline;
+	float: left;
+	}
+.alignright, img.alignright {
+	margin-left: 1.5em;
+	display: inline;
+	float: right;
+	}
+.aligncenter, img.aligncenter {
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+	clear: both;
+	}
+.alignnone, img.alignnone {
+	/* not sure about this one */
+	}
+.wp-caption {
+	margin-bottom: 1.5em;
+	text-align: center;
+	padding-top: 5px;
+	}
+.wp-caption img {
+	border: 0 none;
+	padding: 0;
+	margin: 0;
+	}
+.wp-caption p.wp-caption-text {
+	line-height: 1.5;
+	font-size: 10px;
+	margin: 0;
+	}
+.wp-smiley {
+	margin: 0 !important;
+	max-height: 1em;
+	}
+blockquote.left {
+	margin-right: 20px;
+	text-align: right;
+	margin-left: 0;
+	width: 33%;
+	float: left;
+	}
+blockquote.right {
+	margin-left: 20px;
+	text-align: left;
+	margin-right: 0;
+	width: 33%;
+	float: right;
+	}
+.gallery dl {}
+.gallery dt {}
+.gallery dd {}
+.gallery dl a {}
+.gallery dl img {}
+.gallery-caption {}
+
+.size-full {}
+.size-large {}
+.size-medium {}
+.size-thumbnail {}

@@ -9,6 +9,8 @@ There are more advanced functions that definitely make themes better, but we are
 
 
 TO ADD TO SLIDEDECK:
+- Disclaimer that this is a 'quick' theme
+- Theme Template Hierarchy
 - Front-Page.php
 - Remove Date/Time from Front-page.php & Page.php
 - Update Nav Menu Primary Location in its slide
