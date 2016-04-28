@@ -2,7 +2,7 @@
 This file loads whenever someone visits a page, assuming it's not the home page, the blog page, or several other page types that may override it in the theme's hierarchy. -->
 <?php get_header(); // load the header.php template ?>
 
-<div id="content">
+<div id="content" role="main">
 
 	<!-- the loop -->
 	<?php

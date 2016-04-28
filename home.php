@@ -4,7 +4,7 @@ If you're using WordPress primarily as a CMS, consider creating a blog page in P
 This template file is what WP loads when you choose a static page for your blog posts. -->
 <?php get_header(); // load the header.php template ?>
 
-<div id="content">
+<div id="content" role="main">
 
 	<!-- the loop -->
 	<?php
@@ -15,9 +15,11 @@ This template file is what WP loads when you choose a static page for your blog 
 					<?php the_title('<h2 class="entry-title">','</h2>'); // This command dispays the title of the post ?>
 					<div class="entry-meta"><?php the_time( 'M j Y' ); // Displays the Date and Time ?></div>
 
-					<?php the_content(); // This command displays the content of the post
+					<?php the_content(); // This command displays the content of the post ?>
 
-			endwhile; // Stop looping, because all the posts that were found with have_posts() have been displayed
+					<hr>
+
+			<?php endwhile; // Stop looping, because all the posts that were found with have_posts() have been displayed
 		else : // Maybe there aren't any posts? What if have_posts() didn't find anything? ?>
 		<p>Nothing to see here, folks.</p><!-- Show this message if there's nothing to display. -->
 	<?php endif; // All done ?>

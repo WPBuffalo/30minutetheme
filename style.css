@@ -1,7 +1,6 @@
 /*
 Theme name:30 Minute Theme
 */
-
 * {
 	box-sizing: border-box;
 }
@@ -63,27 +62,26 @@ a img {
 			width: auto;
 		}
 
-hr {
-	display: none;
-}
-
 
 /*********************************************************************************/
 /* List Styles                                                                   */
 /*********************************************************************************/
 
-	ul .widget	{
+	ul.widget	{
 		margin: 0;
 		padding: 0;
 		list-style: none;
 	}
-	ul .widget li {
+	ul.widget li {
 		border-top: solid 1px #E5E5E5;
 		padding: 0.80em 0;
 	}
-	ul .widget li:first-child {
+	ul.widget li:first-child {
 		border-top: 0;
 		padding-top: 0;
+	}
+	ul.widget a {
+		color: #eeeeee;
 	}
 
 
@@ -226,10 +224,30 @@ hr {
 	float: right;
 	width: 30%;
 }
-#sidebar .widget-title {
-	font-size: 1.6em;
+#sidebar ul, #sidebar li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
-#sidebar .box1 {
+#sidebar .widget li {
+  padding: 0.5em 0;
+  border-top: 1px solid #dddddd;
+}
+#sidebar li:first-child {
+  border-top: none;
+}
+#sidebar .widgettitle {
+	font-size: 1.6em;
+  color: #CC7310;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top: 1.5em;
+  margin-bottom: .75em;
+}
+#sidebar .widgettitle:first-child {
+  margin-top: 0;
+}
+#sidebar .widget {
 	margin-bottom: 3em;
 }
 
@@ -289,17 +307,23 @@ hr {
 .footer {
 	color: #ADADAD;
 }
-.footer h3.widget-title {
+.footer ul, .footer li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.footer h2.widgettitle {
 	font-weight: 400;
 	font-size: 1.2em;
-	color: #FFF;
-	border
-}
-.footer .widget-title {
-	border-color: #2D2926 !important;
+  border-color: #2D2926;
+  margin-bottom: 2em;
 }
 .footer .widget li {
-	border-color: #2D2926 !important;
+  border-top: solid 1px #555555;
+  padding: 0.80em 0;
+}
+.footer .widget li:first-child {
+  border-top: none;
 }
 .footer .widget a {
 	font-size:1em;
@@ -384,3 +408,19 @@ blockquote.right {
 .size-large {}
 .size-medium {}
 .size-thumbnail {}
+
+
+/*********************************************************************************/
+/* Custom CSS for Page Templates                                                 */
+/*********************************************************************************/
+body.page-template-page-sidebar-left #sidebar {
+	float: left;
+}
+body.page-template-page-sidebar-left #content {
+	float: right;
+}
+body.page-template-page-full-width #content {
+	width: 90%;
+	margin: 0 auto;
+	float: none;
+}
